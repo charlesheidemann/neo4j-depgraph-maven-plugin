@@ -1,0 +1,20 @@
+sudo: false
+language: java
+jdk:
+  - oraclejdk8
+  - openjdk11
+
+addons:
+  apt:
+    packages:
+      - graphviz
+
+script:
+  - mvn clean install javadoc:javadoc
+
+after_success:
+  - mvn jacoco:prepare-agent test jacoco:report coveralls:report
+
+cache:
+  directories:
+    - $HOME/.m2

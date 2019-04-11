@@ -1,0 +1,50 @@
+{
+  "default-node": {
+    "type": "polygon",
+    "sides": 8,
+    "color": "black",
+    "default-font": {
+      "size": 14,
+      "name": "Courier",
+      "color": "green"
+    },
+    "optional-font": {
+      "size": 9
+    }
+  },
+  "default-edge": {
+    "style": "dotted",
+    "color": "blue"
+  },
+  "edge-scope-styles": {
+    "test": {
+      "style": "dotted",
+      "color": "gray"
+    }
+  },
+  "edge-resolution-styles": {
+    "parent": {
+      "style": "dotted"
+    },
+    "omitted-for-duplicate": {
+      "style": "dashed"
+    }
+  },
+  "node-styles": {
+    ",,,,,classifier": {
+      "type": "polygon",
+      "style": "filled",
+      "fill-color": "green"
+    },
+    ",,,,,,true": {
+      "type": "polygon",
+      "style": "filled",
+      "fill-color": "white"
+    },
+    ",,test": {
+      "type": "box",
+      "style": "filled",
+      "fill-color": "orange"
+    }
+  }
+}
